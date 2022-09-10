@@ -2,9 +2,9 @@
 [Main stylesheet style.css]
 
 Author:	SINDEVO.COM - Smart Interface Development
-Version:	1.0
+Version:	2.0
 Created:	22 January 2018
-Last updated:	22 January 2018
+Last updated:	05 July 2018
 Template:	BLIX - Mobile HTML Template
 ================================================*/
 /*
@@ -264,14 +264,24 @@ z-index:999999;
 /* HEADER LEFT */	
 .navbar_left{
 float:left;
-width:40%;
+width:20%;
 padding:0 0 0 2%;
 }
 .navbar_left a img{
 display:inline-block;
-max-width:100%;
-padding:8px 0 0 0;
+width:24px;
+padding:12px 0 0 0;
 }
+.arrow--left{
+border: solid #fff;
+border-width: 0 2px 2px 0;
+margin:18px 0 0 0;
+display: inline-block;
+padding: 6px;
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+
 .logo_text{ 
 font-size:34px;
 line-height:70px;
@@ -290,8 +300,9 @@ padding:23px 0 0 0;
 }
 /* HEADER CENTER */	
 .navbar_center{
-float:left;
-width:46%;
+position:absolute;
+left:25%;
+width:50%;
 padding:0;
 text-align:center;
 }
@@ -325,7 +336,7 @@ right:0;
 font-size:10px;
 width:15px;
 height:15px;
-background-color:#ff1d2b;
+background-color:#445cfd;
 color:#fff;
 -webkit-border-radius:50%; 
 -moz-border-radius:50%;  
@@ -342,7 +353,7 @@ max-width:55%;
 padding:12px 0 0 0;
 }
 .navbarpages.navbarpagesbg{
-background-color:#ff1d2b;	
+background-color:#445cfd;	
 }
 /*===============================================*/
 /* 5. CUSTOM BUTTONS */
@@ -432,10 +443,10 @@ transition-duration: 400ms;
 color:#222222;
 }
 .panel-left, .pagepanel{
-background-color:#ff1d2b;
+background-color:#445cfd;
 }
 .panel-right{
-background-color:#ff1d2b;
+background-color:#445cfd;
 }
 
 /* 6-1. USER ACCOUNT SIDEBAR RIGHT */
@@ -505,7 +516,7 @@ padding:5px 0 10px 0;
 margin:0 0 0 5%;
 display:inline-block;
 text-align:center;
-border-bottom:1px #fd4854 solid;
+border-bottom:1px #556afb solid;
 }
 .user-nav ul li img{
 display:inline-block;
@@ -529,12 +540,12 @@ line-height:30px;
 text-align:center;
 -webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;
 background-color:#eaca02;
-color:#ff1d2b;
+color:#445cfd;
 }
 .user-nav ul li a{
 font-size:14px;
 font-weight:300;
-color:#fff;
+color:#d1d7ff;
 }
 
 /* 6-2. MAIN NAVIGATION SIDEBAR LEFT */
@@ -562,7 +573,7 @@ display:block;
 float:left;
 clear:both;
 text-align:left;
-border-bottom:1px #fd4854 solid;
+border-bottom:1px #556afb solid;
 }
 .main_nav_underline ul li.subnav{
 background:url(images/subnav_white.png) no-repeat right top;
@@ -612,8 +623,8 @@ padding:25px 2%;
 display:inline-block;
 float:left;
 text-align:center;
-border-bottom:1px #fd4854 solid;
-border-right:1px #fd4854 solid;
+border-bottom:1px #7586fe solid;
+border-right:1px #7586fe solid;
 }
 .main_nav_icons_inline_2 ul li:nth-child(2n) {
 border-right:none;
@@ -662,8 +673,8 @@ padding:15px 0;
 display:inline-block;
 float:left;
 text-align:center;
-border-bottom:1px #fd4854 solid;
-border-right:1px #fd4854 solid;
+border-bottom:1px #7586fe solid;
+border-right:1px #7586fe solid;
 }
 .main_nav_icons_inline_3 ul li:nth-child(3n) {
 border-right:none;
@@ -699,7 +710,7 @@ margin:0;
 float:left;
 clear:both;
 padding:10px 5%;
-background-color:#dc0c19;
+background-color:#4155db;
 }
 .subnav_header a{
 display:block;
@@ -725,7 +736,7 @@ padding:5px 0 0 20px;
 /* 7. PAGES LAYOUT GENERAL */
 /*===============================================*/	
 .homepage{
-background-color:#ff1d2b;
+background-color:#445cfd;
 }
 #pages_maincontent{
 width:100%;
@@ -900,7 +911,7 @@ font-size:12px;
 padding:5px;
 font-weight:300;
 color:#fff;
-background-color:#ff1d2b;
+background-color:#445cfd;
 display:inline;
 } 
 .slider-caption p{
@@ -937,11 +948,11 @@ width: 95%;
 }
 .swiper-container .swiper-pagination-bullet-active {
 opacity: 1;
- border:1px solid #ff1d2b;
+ border:1px solid #445cfd;
 }
 .swiper-container-pages .swiper-pagination-bullet-active {
 opacity: 1;
-background: #ff1d2b;
+background: #445cfd;
 }
 .swiper-pagination-toolbar{
 position: absolute;
@@ -985,14 +996,14 @@ background: #000;
 	-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
 }
 .swiper-button-next{
-	background:url(images/nav-next.png) no-repeat center #ff1d2b; 
+	background:url(images/nav-next.png) no-repeat center #445cfd; 
 	width: 40px;
     height: 40px;
 	bottom:22%;
 	right:2.5%;
 }
 .swiper-button-prev{
-	background:url(images/nav-prev.png) no-repeat center #ff1d2b; 
+	background:url(images/nav-prev.png) no-repeat center #445cfd; 
 	width: 40px;
     height: 40px;
 	bottom:22%;
@@ -2264,7 +2275,7 @@ backface-visibility: hidden;
 	padding:0 5%;
 }
 .navbar, .toolbar, .subnavbar {
-    background: #ff1d2b;
+    background: #445cfd;
 }
 .navbar a.link, .toolbar a.link, .subnavbar a.link {
 	color:#fff;
@@ -2272,7 +2283,7 @@ backface-visibility: hidden;
 .picker-modal .toolbar {
     position: relative;
     width: 100%;
-    background: #ff1d2b;
+    background: #445cfd;
 }
 .picker-modal .toolbar a{
 	color:#fff;
@@ -2286,7 +2297,7 @@ backface-visibility: hidden;
     top: auto;
     height: 1px;
     width: 100%;
-    background-color: #ff1d2b;
+    background-color: #445cfd;
     display: block;
     z-index: 15;
     -webkit-transform-origin: 50% 100%;
@@ -2301,7 +2312,7 @@ backface-visibility: hidden;
     right: auto;
     height: 1px;
     width: 100%;
-    background-color: #ff1d2b;
+    background-color: #445cfd;
     display: block;
     z-index: 15;
     -webkit-transform-origin: 50% 0%;
